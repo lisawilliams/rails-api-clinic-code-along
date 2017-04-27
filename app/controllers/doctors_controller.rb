@@ -9,6 +9,7 @@ class DoctorsController < ApplicationController
   def show
     render json: @doctor
   end
+  
 
   def create
     @doctor = Doctor.new(doctor_params)
