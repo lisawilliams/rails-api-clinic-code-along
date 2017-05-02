@@ -5,6 +5,7 @@ class CreatePatients < ActiveRecord::Migration[5.0]
       t.string :diagnosis
       t.date :born_on
 
+
       t.timestamps
     end
   end

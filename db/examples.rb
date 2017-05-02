@@ -9,58 +9,34 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-# %w(antony jeff matt jason).each do |name|
-#   email = "#{name}@#{name}.com"
-#   next if User.exists? email: email
-#   User.create!(email: email,
-#                password: 'abc123',
-#                password_confirmation: nil)
-# end
-
 Patient.create([
                  { name: 'Jeff Horn',
-                   sickness: 'Too cool for school' },
+                   diagnosis: 'Too cool for school'},
                  { name: 'Chris Payne',
-                   sickness: 'Way to excited' },
+                   diagnosis: 'Way to excited' },
                  { name: 'Brian Berzellini',
-                   sickness: 'Spooky Ghost' },
+                   diagnosis: 'Spooky Ghost' },
                  { name: 'Antony Donovan',
-                   sickness: 'Robot Syndrome' },
+                   diagnosis: 'Robot Syndrome' },
                  { name: 'Jason Weeks',
-                   sickness: 'Oddly large chest' }
+                   diagnosis: 'Oddly large chest' }
                ])
 
 # Doctor.create([
 #                 { given_name: 'Ben',
-#                   surname: 'Adamski',
+#                   family_name: 'Adamski',
 #                   specialty: 'VapeKing' },
 #                 { given_name: 'Rachel',
-#                   surname: 'Stevens',
+#                   family_name: 'Stevens',
 #                   specialty: 'Horse Enthusiast' },
 #                 { given_name: 'Julie',
-#                   surname: 'Carroll',
+#                   family_name: 'Carroll',
 #                   specialty: 'Getting everyone jobs' },
 #                 { given_name: 'Lu',
-#                   surname: 'Nathan',
+#                   family_name: 'Nathan',
 #                   specialty: 'iPhone guru' },
 #                 { given_name: 'Naida',
-#                   surname: 'the Pollster',
+#                   family_name: 'the Pollster',
 #                   specialty: 'Keeping us all caffinated' }
 #               ])
 #
-# Patient.create([
-#                  { name: 'Jeff Horn',
-#                    sickness: 'Too cool for school',
-#                    doctor_id: 2 },
-#                  { name: 'Chris Payne',
-#                    sickness: 'Way to excited',
-#                    doctor_id: 2 },
-#                  { name: 'Brian Berzellini',
-#                    sickness: 'Spooky Ghost' },
-#                  { name: 'Antony Donovan',
-#                    sickness: 'Robot Syndrome',
-#                    doctor_id: 1 },
-#                  { name: 'Jason Weeks',
-#                    sickness: 'Oddly large chest',
-#                    doctor_id: 4 }
-#                ])
