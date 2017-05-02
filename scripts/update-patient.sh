@@ -1,8 +1,7 @@
-curl --include --request PATCH http://localhost:4741/patients/3 \
+curl --include --request PATCH http://localhost:4741/appointments/1 \
   --header "Content-Type: application/json" \
   --data '{
-    "patient": {
-      "name": "Ronald McDonald",
-      "diagnosis": "Too many burgers"
+    "appointment": {
+      "doctor_id": "3"
     }
   }'
